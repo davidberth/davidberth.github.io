@@ -11,3 +11,6 @@ My academic background includes mathematics and data science (Harvard, MIT), wit
 The technical focus of my current work includes real-time GPU simulation systems, novel AI architectures that combine large language models with reinforcement learning for emergent behavior, and research in theoretical Graph Theory.
 
 This blog documents the technical challenges and solutions I encounter while working on these projects.
+
+---
+This site was built using a customized version of the Chirpy theme for Jekyll.
