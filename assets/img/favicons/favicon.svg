@@ -1,17 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><svg width="200" height="200" viewBox="0 0 200 200" version="1.1" id="SvgjsSvg1530" sodipodi:docname="lixel_logo_dark.svg" inkscape:version="1.4.2 (f4327f4, 2025-05-13)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <defs id="SvgjsDefs1529"></defs>
-  <sodipodi:namedview id="SvgjsSodipodi:namedview1528" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" inkscape:zoom="2.062984" inkscape:cx="55.986861" inkscape:cy="88.464087" inkscape:window-width="1618" inkscape:window-height="1211" inkscape:window-x="1429" inkscape:window-y="109" inkscape:window-maximized="0" inkscape:current-layer="svg6"></sodipodi:namedview>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><svg width="200" height="200" viewBox="0 0 200 200" version="1.1" id="SvgjsSvg1015" sodipodi:docname="lixel_logo_dark.svg" inkscape:version="1.4.2 (f4327f4, 2025-05-13)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <defs id="SvgjsDefs1014"></defs>
+  <sodipodi:namedview id="SvgjsSodipodi:namedview1013" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:showpageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#505050" inkscape:zoom="1.031492" inkscape:cx="191.47022" inkscape:cy="-53.805555" inkscape:window-width="1618" inkscape:window-height="1211" inkscape:window-x="1429" inkscape:window-y="109" inkscape:window-maximized="0" inkscape:current-layer="svg6"></sodipodi:namedview>
   <!-- Background -->
   <!-- Base -->
-  <rect style="fill:#f5f5f5;fill-opacity:1;stroke:#ffffff;stroke-width:1.00594" id="SvgjsRect1527" width="204.30795" height="205.1304" x="-3.1356144" y="-1.1429224"></rect>
   <!-- left base -->
   <!-- right base (darker shadow) -->
   <!-- Vertical L -->
-  <rect x="108.17683" y="152.19728" width="49.252823" height="39.91264" fill="#cccccc" id="SvgjsRect1526" style="fill:#2b2b2b;fill-opacity:1;stroke:#000000;stroke-width:0.744143;stroke-dasharray:none;stroke-opacity:1"></rect>
-  <rect x="44.221359" y="105.88985" width="48.589287" height="39.917614" fill="#cccccc" id="SvgjsRect1525" style="fill:#bcbcbc;fill-opacity:1;stroke:#000000;stroke-width:1.58846;stroke-dasharray:none;stroke-opacity:1"></rect>
-  <rect x="44.640205" y="152.35164" width="48.589287" height="39.917614" fill="#cccccc" id="SvgjsRect1524" style="fill:#bcbcbc;fill-opacity:1;stroke:#000000;stroke-width:1.58846;stroke-dasharray:none;stroke-opacity:1"></rect>
-  <rect x="44.151073" y="59.980778" width="48.589287" height="39.917614" fill="#cccccc" id="SvgjsRect1523" style="fill:#ffce1d;fill-opacity:1;stroke:#000000;stroke-width:1.58846;stroke-dasharray:none;stroke-opacity:1"></rect>
-  <rect x="43.98481" y="11.961125" width="48.535919" height="41.066319" fill="#cccccc" id="SvgjsRect1522" style="fill:#bcbcbc;fill-opacity:1;stroke:#000000;stroke-width:1.61027;stroke-dasharray:none;stroke-opacity:1"></rect>
+  <rect x="108.17683" y="152.19728" width="49.252823" height="39.91264" fill="#cccccc" id="SvgjsRect1012" style="fill:#2b2b2b;fill-opacity:1;stroke:#000000;stroke-width:0.744143;stroke-dasharray:none;stroke-opacity:1"></rect>
+  <rect x="44.221359" y="105.88985" width="48.589287" height="39.917614" fill="#cccccc" id="SvgjsRect1011" style="fill:#bcbcbc;fill-opacity:1;stroke:#000000;stroke-width:1.58846;stroke-dasharray:none;stroke-opacity:1"></rect>
+  <rect x="44.640205" y="152.35164" width="48.589287" height="39.917614" fill="#cccccc" id="SvgjsRect1010" style="fill:#bcbcbc;fill-opacity:1;stroke:#000000;stroke-width:1.58846;stroke-dasharray:none;stroke-opacity:1"></rect>
+  <rect x="44.151073" y="59.980778" width="48.589287" height="39.917614" fill="#cccccc" id="SvgjsRect1009" style="fill:#ffce1d;fill-opacity:1;stroke:#000000;stroke-width:1.58846;stroke-dasharray:none;stroke-opacity:1"></rect>
+  <rect x="43.98481" y="11.961125" width="48.535919" height="41.066319" fill="#cccccc" id="SvgjsRect1008" style="fill:#bcbcbc;fill-opacity:1;stroke:#000000;stroke-width:1.61027;stroke-dasharray:none;stroke-opacity:1"></rect>
   <!-- bottom of side -->
   <!-- bright middle -->
   <!-- top -->
