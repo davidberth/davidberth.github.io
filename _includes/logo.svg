@@ -5,7 +5,7 @@
    viewBox="0 0 444.24307 183.90875"
    version="1.1"
    id="svg6"
-   sodipodi:docname="title.svg"
+   sodipodi:docname="logo.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,11 +25,11 @@
      inkscape:zoom="1.031492"
      inkscape:cx="353.37162"
      inkscape:cy="-47.019269"
-     inkscape:window-width="1618"
-     inkscape:window-height="1211"
-     inkscape:window-x="1119"
-     inkscape:window-y="79"
-     inkscape:window-maximized="0"
+     inkscape:window-width="3200"
+     inkscape:window-height="1894"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg6" />
   <!-- Background -->
   <!-- Base -->
@@ -79,15 +79,9 @@
   <!-- bottom of side -->
   <!-- bright middle -->
   <!-- top -->
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:226.667px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#bcbcbc;stroke:#000000;stroke-width:1.641"
-     x="123.12263"
-     y="180.32132"
-     id="text1"><tspan
-       sodipodi:role="line"
-       id="tspan1"
-       x="123.12263"
-       y="180.32132"
-       style="font-weight:bold">ixel</tspan></text>
+  <path
+     style="font-weight:bold;font-size:226.667px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT';fill:#bcbcbc;stroke:#000000;stroke-width:1.641"
+     d="m 137.39999,50.71826 q 0,-6.751312 4.64845,-11.399757 4.75912,-4.759121 11.39975,-4.759121 6.75132,0 11.51044,4.759121 4.8698,4.759122 4.8698,11.399757 0,6.640635 -4.8698,11.510434 -4.75912,4.759122 -11.51044,4.759122 -6.64063,0 -11.39975,-4.759122 -4.64845,-4.869799 -4.64845,-11.510434 z m 32.20708,37.85162 v 85.00013 h 8.63283 v 6.75131 h -49.47273 v -6.75131 h 10.62501 V 98.088123 h -10.62501 v -6.861989 h 14.05601 q 10.95705,0 18.37242,-1.328127 7.41538,-1.328127 8.41147,-1.328127 z m 18.37242,2.656254 h 54.78524 v 6.861989 h -11.73179 l 15.38414,21.914097 10.62502,-12.61721 q 4.09506,-4.8698 4.09506,-6.64063 0,-2.656257 -5.8659,-2.656257 h -3.20964 v -6.861989 h 35.85943 v 6.861989 q -9.51824,0 -12.83856,1.438804 -3.20964,1.328123 -9.62892,8.964853 l -14.72007,17.37633 32.42843,47.7019 h 9.07553 v 6.75131 h -57.77352 v -6.75131 h 13.05992 l -16.49092,-24.79171 -13.17059,15.49482 q -4.31641,4.98047 -4.31641,6.52996 0,2.76693 4.53777,2.76693 h 5.20183 v 6.75131 h -33.75656 v -6.75131 h 3.20964 q 5.75521,0 8.07944,-1.21745 2.32422,-1.32813 7.08334,-6.97267 l 19.03649,-22.46748 -31.10031,-44.824287 h -7.85809 z m 197.22688,39.401096 h -54.45321 v 14.38805 q 0,16.93362 2.98829,23.46357 3.09896,6.41928 14.05601,6.41928 9.62892,0 17.92971,-6.19792 8.41147,-6.19793 12.83856,-19.25784 h 6.64064 q -4.09506,16.82294 -15.16279,25.23441 -11.06772,8.41147 -26.56254,8.41147 -21.13935,0 -33.86724,-14.49872 -12.6172,-14.49872 -12.6172,-33.42453 0,-18.15107 12.83856,-32.31776 12.83856,-14.27736 32.0964,-14.27736 16.60159,0 28.88676,10.403661 12.28518,10.403659 14.38805,31.653689 z m -54.45321,-7.19402 h 23.79561 v -9.29689 q 0,-12.06382 -3.32032,-15.605488 -3.20964,-3.652349 -8.85418,-3.652349 -5.31251,0 -8.52215,3.20964 -3.09896,3.209637 -3.09896,16.269557 z M 434.1257,29.80026 v 143.76975 h 9.29689 v 6.75131 h -49.47273 v -6.75131 h 9.96095 V 38.65444 h -9.96095 v -6.751312 q 13.94533,0 27.55863,-1.106773 l 8.96486,-0.996095 z"
+     id="text1"
+     aria-label="ixel" />
 </svg>
