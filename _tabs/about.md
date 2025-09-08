@@ -13,4 +13,7 @@ The technical focus of my current work includes real-time GPU simulation systems
 This blog documents the technical challenges and solutions I encounter while working on these projects.
 
 ---
+Why the name 'Lixel'? Lixel is a combination of light and pixel, illuminating from fundamental building blocks (pixel), building clarity, agency, and intelligence in a real-time graphics setting.
+
+---
 This site was built using a customized version of the Chirpy theme for Jekyll.
