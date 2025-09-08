@@ -11,7 +11,13 @@
       {%- endif -%}
     </a>
 
-    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    {% if site.logo_include %}
+  <a class="site-title d-block site-logo-link" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
+    {% include {{ site.logo_include }} %}
+  </a>
+{% else %}
+  <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+{% endif %}
     <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
   </header>
   <!-- .profile-wrapper -->

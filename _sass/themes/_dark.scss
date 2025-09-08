@@ -43,6 +43,16 @@
   --sidebar-btn-color: #787878;
   --avatar-border-color: rgb(206, 206, 206, 0.9);
 
+  #sidebar .profile-wrapper .site-logo-link svg {
+  display: block;
+  width: 160px;          /* adjust to taste */
+  height: auto;
+  margin: 0.25rem auto 0;
+  }
+ #sidebar .profile-wrapper .site-subtitle { margin-top: 0.25rem; }
+
+
+
   /* Topbar */
   --topbar-bg: rgba(24, 24, 35, 0.64);
   --topbar-text-color: var(--text-color);
