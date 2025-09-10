@@ -49,4 +49,4 @@ This unlocks gameplay possibilities I haven’t seen in any other game — and h
 
 ---
 
-Well, I wanted to keep this piece relatively brief and non-technical. More technical deep-dives are coming soon!
+Well, I wanted to keep this piece relatively brief and non-technical. (Hey, at least there aren't any equations in this post!) More technical deep-dives are coming soon!
