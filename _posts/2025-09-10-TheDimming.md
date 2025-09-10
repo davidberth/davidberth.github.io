@@ -17,7 +17,7 @@ Players can build lights, roads, buildings, and other structures to repel and re
 
 ## Agency System
 
-The entire game revolves around a system of **agency and intelligence** — a partial ordering of abilities that increase as agents are exposed to light, and degrade in darkness. The longer an agent remains in the light, the more powerful and intentional their actions become. In the shroud, their cognition fades. If they fall far enough, they may even come under enemy control.
+The entire game revolves around a system of **agency and intelligence**, a partial ordering of abilities that increase as agents are exposed to light, and degrade in darkness. The longer an agent remains in the light, the more powerful and intentional their actions become. In the shroud, their cognition fades. If they fall far enough, they may even come under enemy control.
 
 | Agency  | Control State               | Example Actions                     | Thematic Meaning                       |
 |--------|-----------------------------|-------------------------------------|----------------------------------------|
@@ -39,7 +39,7 @@ My hope is to achieve deep strategic gameplay through this system — emerging f
 
 ## Simulation System
 
-Procedural generation is becoming ubiquitous in games, but *The Dimming* takes it further by simulating an entire planet in real time. Unlike typical handcrafted terrain or noise-based maps, the world is built using a **real-time physical simulation system** that continuously updates during play.
+Procedural generation is becoming ubiquitous in games, but **The Dimming** takes it further by simulating an entire planet in real time. Unlike typical handcrafted terrain or noise-based maps, the world is built using a **real-time physical simulation system** that continuously updates during play.
 
 Using an **inflated cube topology** to form a spheroid, combined with a **fifth-order odd polynomial equal-area projection**, I generate a seamless, cell-based simulation surface. This allows for physically-based terrain generation, hydraulic and thermal erosion, water flow, river formation, and the real-time spread of the shroud via fluid mechanics and flow/influence fields.
 
