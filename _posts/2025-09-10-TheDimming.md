@@ -35,7 +35,7 @@ The entire game revolves around a system of **agency and intelligence**, a parti
 | -6     |                             | Lead other enemy agents             | Corrupted leadership                   |
 | -8     | Full Enemy Control (Dark)   | Build dark towers, lead offensives  | Strategic malice                       |
 
-My hope is to achieve deep strategic gameplay through this system — emerging from a relatively small set of elegant mechanics, similar to games like **chess** or **Go**.
+My hope is to achieve deep strategic gameplay through this system, emerging from a relatively small set of elegant mechanics, similar to games like **chess** or **Go**.
 
 ## Simulation System
 
@@ -43,7 +43,7 @@ Procedural generation is becoming ubiquitous in games, but **The Dimming** takes
 
 Using an **inflated cube topology** to form a spheroid, combined with a **fifth-order odd polynomial equal-area projection**, I generate a seamless, cell-based simulation surface. This allows for physically-based terrain generation, hydraulic and thermal erosion, water flow, river formation, and the real-time spread of the shroud via fluid mechanics and flow/influence fields.
 
-To support performance, I built a **general frame distribution system** to efficiently update the six cube faces of the simulation surface across frames — enabling high-fidelity, planet-wide simulations at interactive framerates.
+To support performance, I built a **general frame distribution system** to efficiently update the six cube faces of the simulation surface across frames, enabling high-fidelity, planet-wide simulations at interactive framerates.
 
 This unlocks gameplay possibilities I haven’t seen in any other game — and helps bring the world to vivid life.
 
