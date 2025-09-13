@@ -5,7 +5,7 @@ categories: [Simulations, GPU, Topology]
 tags: [simulation, inflated, cube, geospatial]     # TAG names should always be lowercase
 ---
 
-The Dimming (a rather Stephen King-esque title, I know!) is the working name for a solo indie game I've been developing for ~3 months. It explores themes of light, darkness, agency, and intelligence. This game will make use of a real-time generative AI framework I'm developing — more on that in future posts. It's been a lot of fun to work on!
+The Dimming is the working name for a solo indie game I've been developing for ~3 months. It explores themes of light, darkness, agency, and intelligence. This game will make use of a real-time generative AI framework I'm developing — more on that in future posts. It's been a lot of fun to work on!
 
 {% include embed/youtube.html id='v-jWnpesxY4' %}
 
@@ -28,7 +28,7 @@ The entire game revolves around a system of **agency and intelligence**, a parti
 | +3     |                             | Explore unknown regions             | Curiosity, discovery                   |
 | +2     |                             | Defend structures or allies         | Loyalty, basic judgment                |
 | +1     |                             | Attack nearby enemies               | Reflexive aggression                   |
-|  0     | Edge of Control             | Wander aimlessly                    | Confusion, loss of purpose             |
+|  0     | Edge of Control             | Wander around aimlessly             | Confusion, loss of purpose             |
 | -1     | Enemy Influence Begins      | Attack player structures            | Manipulated intent                     |
 | -2     |                             | Follow enemy paths                  | Subverted will                         |
 | -4     |                             | Build negative lights               | Reinforce darkness, suppress clarity   |
