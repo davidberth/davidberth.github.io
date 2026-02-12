@@ -17,10 +17,10 @@ timezone: America/New_York
 
 title: Lixel
 
-tagline: Real-time Generative AI
+tagline: Real-time Generative AI and Graph Theory
 
 description: >- # used by seo meta and the atom feed
-  This is my personal blog where I share insights and updates on real-time generative AI and game development.
+  This is my personal blog where I share insights and updates on real-time generative AI, game development, and graph theory.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
