@@ -1,5 +1,5 @@
 ---
-title: Hadwiger's Conjecturer
+title: Hadwiger's Conjecture
 date: 2025-2-12
 categories: [Topology, graph, coloring]
 tags: [graph, hadwigers, math]     
