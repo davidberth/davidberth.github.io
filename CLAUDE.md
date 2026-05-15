@@ -1,16 +1,63 @@
-I'm creating a simple website/blog to discuss the work that I'm doing. This blog will be technical and will have many images and videos.  
+# Lixel — site
 
-Summary of what I'm working on which will be included in the blog
+Personal + business site at **lixel.io**. Jekyll-theme-chirpy on GitHub Pages, custom domain via Google Workspace, push-to-deploy via GitHub Actions. Local clone: `C:\db\lixelweb\`.
 
-I quit my job - principal data scientist at a large company - almost 3 months ago to pursue 1. making a game in Unreal Engine, 2. making a real-time generative AI framework for games and simulation, and to 3. work on a problem related to Hadwiger's conjecture.  
+## Identity & positioning
 
-Background: I sold a startup that founded for ~12 million a few years ago and have about 3.2 million saved up - been average about 7% returns with a conservative to moderate investment portfolio. The startup was based on a set of algorithms/pipeline to work with geospatial data holistically (and losslessly) by creating a partition of the area of interest, with the blocks of the partition comprising contiguous areas of uniform information. Spatial operations become non-spatial by performing aggregations on these blocks. This was able to connect to non-spatial databases and even no-SQL databases. 
+Public face of David Berthiaume's professional life — consulting, research, and indie work under the **Lixel** brand ("light + pixel — emergence from fundamental building blocks").
 
-I recently finished a Master's degree at Harvard. I did well, finishing with a perfect GPA (all A's at Harvard, and A+'s at cross registered MIT courses). I had an amazing time there, but it was stressful and busy - especially while trying to work at the same time and raise a (then) infant son.  I have several patents and first author publications in mathematics and data science.  
+### Mission anchor
+Same Mission as `Atlas/Context` in Notion. The site should reflect it: deep intellectual and artistic contribution, integrity, authentic thinking, time for meaningful work and family.
 
-For the game 1. I got the idea from one of my favorite books of all time, Yumi and the Nightmare Painter. The games takes place on a procedurally generated planetoid that is covered in a dark shroud from which monsters/nightmares spawn. Goal is to defeat monsters, build roads, lights that repel the shroud, defend/destroy against anti lights that attract the shroud, control tens of thousands of intelligent agents (see #2 below) and eventually defeat the source of the dark shroud on the opposite pole (from where you start) of the planet.  
-This has been a lot of fun to work on an very highly technical. I had the spatial infrastructure set up using an inflated cube approach to generate the planet with an approximately equal area projection (a fifth order odd polynomial). I have real-time simulation system set up where I can run arbitrary simulations across the entire planetoid on the GPU with correct neighborhood sampling with correct wraparound sampling. I use this to perform thermal/hydraulic erosion, generate normals, generate rivers, material blending, tree, grass, object placement, water flow rendering, path finding etc. I'm now beginning to work on the real-time shroud which will be based on fluid mechanics (hopefully novel enough to attract attention and be fun to play). I've been working on this for about 2.5 months, including some time taken to learn unreal engine (which I was completely new to).  I've always dreamed about making and releasing a game. I started making (simple) games on a commodore 64 when I was ~6 years old and was hooked. 
+### Wedge
+Not a vertical, not a strategist — **the senior technical fellow you bring in when your team can't move past a hard core problem.** Track record spans atmospheric science (NASA Co-PI, parallel radiative transfer on heterogeneous GPU clusters, GEOS-5), situational awareness (IR scene simulator), geospatial (wildfire modeling, landcover-change detection, building-footprint ML), graph theory (patented framework, founded + sold a company), 3D engines (built from scratch), and applied ML (tax-code classification). Stay clear of work shaped like *convince stakeholder B / hire team of X / raise funding for Y* — those aren't strengths. The offer is **solving hard problems**, not running them.
 
-I have an ability - action system with the following partial ordering. This could be symmetric or nearly symmetric around 0. High intelligent/complexity tasks -> +8 build towers, lead and guide other agents +7 build lights, build roads +6 collect resources +4 the player can *directly control this character* +3 explore +2 defend +1 attack 0 - slowly but randomly walk around The negative versions of this are in enemy control. More exposure to shroud decrease the highest ability for that agent. if it reaches 0, the poor soul randomly wanders around in confusion. If it drops below 0, the other side/enemy slowly gains control with abilities slowly increases with even more exposure to the shroud. Some strategy elements; Maybe the player will strategically allow exposure to the shroud for limited periods to enable attacks and exploration, with support from reserve agents to guide and lead.
+### Audiences
+1. **Consulting prospects** — companies stuck on a hard technical problem. Want: credibility, examples of solved hard problems, fast path to contact.
+2. **Research peers** — curious about Hadwiger's. Surface lightly until the paper is out.
+3. **Indie / game audience** — The Dimming. Surface as progress allows.
 
-For 2. I'm creating a real-time generative AI system to add intelligence to games. Similar to how lighting used to be baked into a world for global illumination, AI is baked into the world. The user defines a set of fundamental interface functions (task that can be accomplished), the shape and topology of the world, and all possible fundamental states. The first stage uses powerful LLMs to come up with a complete state space and composite strategies from this (the baking process). During actual game play, RL and very small LLMs are used in real time in compute shaders spread across frames to navigate this state graph and handle these composite strategies. This has also been a lot of fun to work though this is quite early. 
+### Voice
+Hybrid tagline: poetic main (**"Lixel — light + pixel. Emergence from fundamental building blocks."**) + descriptive subtitle ("Real-time AI, computer vision, geospatial intelligence, and graph theory."). Body copy: technical-academic is fine for v1, first-person welcome. No management-speak.
+
+### Off-limits
+- No mention of Avalara (recent employer).
+- No personal financials (savings, returns, sale figures).
+- No family / health / personal-life content.
+- Hadwiger's: status only, no proof details, until the paper is out.
+
+### Sitemap (v1)
+Top-nav (replacing chirpy defaults):
+- **About** — bio, Mission, current threads (consulting, research-in-progress, Dimming) mentioned briefly.
+- **Consulting** — wedge, problem examples, contact. Most urgent.
+- **Writing** — chronological posts (existing Hadwigers + Dimming live here).
+- **Contact** — or fold into Consulting.
+
+Demote chirpy's Categories / Tags / Archives to secondary.
+
+## What I'm working on (project context for Claude)
+
+Three active threads since leaving a recent principal data scientist role:
+
+### 1. The Dimming (indie game, Unreal Engine)
+Procedurally generated planetoid covered in a dark shroud from which monsters/nightmares spawn. The player defeats monsters, builds roads + lights (which repel the shroud) and defends/destroys anti-lights (which attract it), controls tens of thousands of intelligent agents (see #2), and eventually defeats the source of the shroud at the opposite pole of the planet.
+
+- Inspired by *Yumi and the Nightmare Painter*.
+- Spatial infrastructure: inflated-cube approach for an approximately-equal-area projection (fifth-order odd polynomial).
+- Real-time GPU simulation across the entire planetoid with correct wraparound neighborhood sampling — thermal/hydraulic erosion, normals, rivers, material blending, tree/grass/object placement, water flow rendering, pathfinding.
+- Current work: real-time shroud based on fluid mechanics (aiming for something novel enough to attract attention and be fun).
+- ~2.5 months in, including time spent learning Unreal (new to me).
+- **Ability/action partial-order system:** from +8 (build towers, lead and guide other agents) down through +7 (build lights, roads), +6 (collect resources), +4 (player directly controls), +3 (explore), +2 (defend), +1 (attack), 0 (slowly, randomly walk around). Negative tiers mirror this for enemy control. Shroud exposure decreases the agent's highest ability; at 0, the agent wanders in confusion; below 0, the enemy slowly gains control with abilities increasing under further exposure. Strategy emerges from controlled-exposure tradeoffs.
+
+### 2. Real-time generative AI for games and simulation
+"Baked AI," in the spirit of baked lighting. The user defines a set of fundamental interface functions (tasks that can be accomplished), the shape and topology of the world, and all possible fundamental states. The bake stage uses powerful LLMs to derive a complete state space and composite strategies. At runtime, RL plus very small LLMs in compute shaders — spread across frames — navigate the state graph and execute composite strategies. Quite early.
+
+### 3. Hadwiger's conjecture
+Active research. Details stay private until publication.
+
+## Background context (for tone / credibility calibration, not for the public site verbatim)
+
+- Master's at Harvard, cross-registered MIT, did well academically.
+- Patents + first-author publications in math + data science.
+- Founded + sold a previous startup whose tech was a holistic, lossless geospatial pipeline: partition the area of interest into contiguous blocks of uniform information, so spatial operations become non-spatial via block aggregations — queryable from non-spatial / no-SQL databases. Architecturally relevant to current geospatial / CV consulting work.
+- Coding games since age 6 on a Commodore 64.
