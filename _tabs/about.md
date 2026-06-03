@@ -16,7 +16,7 @@ Master's at Harvard, cross-registered at MIT. First-author publications and pate
 
 ## What I'm working on now
 
-**Consulting.** I take on hard core technical problems in real-time AI, computer vision, and geospatial, typically where the existing approach has hit a wall. See [Consulting](/consulting/).
+**Consulting.** I take on hard core technical problems in real-time AI, computer vision, and geospatial, typically where the existing approach has hit a wall. Currently available for a small number of new engagements when there's a good fit. See [Consulting](/consulting/).
 
 **A planetary-scale game (working title: *The Dimming*).** A procedurally generated planetoid covered by a dark shroud, with real-time GPU simulation across the whole world (thermal and hydraulic erosion, rivers, material blending, vegetation placement, water flow, pathfinding) and tens of thousands of intelligent agents whose behavior emerges from a partial-order ability system under shroud exposure. Two and a half months in.
 

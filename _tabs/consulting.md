@@ -29,6 +29,10 @@ Not a vertical specialist, not a strategist, not someone you bring in to convinc
 
 Short, focused, technically deep. Often a few weeks of investigation and prototyping that produces a working approach your team can run with, not a deck.
 
+## Availability
+
+Currently available for a small number of new engagements when there's a good fit. If your problem sounds like something I might help with, please reach out.
+
 ## Contact
 
 Email: [david@lixel.io](mailto:david@lixel.io)
