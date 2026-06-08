@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-I'm David Berthiaume, a mathematician and engineer working at the intersection of real-time AI, computer vision, geospatial intelligence, and graph theory.
+I'm David Berthiaume. I work on real-time AI, computer vision, geospatial intelligence, and graph theory.
 
 ## Mission
 
@@ -12,7 +12,7 @@ Deep intellectual and artistic contribution. Integrity in the work and in how it
 
 ## Background
 
-Master's at Harvard, cross-registered at MIT. First-author publications and patents in mathematics and data science. Co-PI on NASA atmospheric-science work, including parallel radiative-transfer codes on heterogeneous GPU clusters integrated with GEOS-5. Built an IR scene simulator for situational awareness. Geospatial work on wildfire modeling, landcover-change detection, and building-footprint ML. Founded and sold a geospatial analytics company whose pipeline made spatial operations queryable as non-spatial aggregations over uniform-information blocks. Built a 3D engine from scratch. Have been writing code since age six on a Commodore 64.
+Master's at Harvard, cross-registered at MIT. First-author publications and patents in mathematics and data science. Co-PI on NASA atmospheric-science work, including parallel radiative-transfer codes on heterogeneous GPU clusters integrated with GEOS-5. Built an IR scene simulator for situational awareness. Geospatial work on wildfire modeling, landcover-change detection, and building-footprint ML. Founded and sold a geospatial analytics company whose pipeline made spatial operations queryable as non-spatial aggregations over uniform-information blocks. Built a 3D engine on the side. Have been coding since childhood.
 
 ## What I'm working on now
 
