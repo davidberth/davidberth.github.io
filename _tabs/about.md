@@ -1,10 +1,13 @@
 ---
 # the default layout is 'page'
-icon: fas fa-info-circle
-order: 1
+icon: fas fa-user
+order: 7
+title: About
 ---
 
-I'm David Berthiaume. I work on real-time AI, computer vision, geospatial intelligence, and graph theory.
+I'm David Berthiaume, founder and research engineer at Lixel.
+
+Lixel is a small, focused practice built around four lanes: independent mathematics and computation research, technical consulting for hard problems in applied AI and scientific computing, advanced math and ML tutoring, and (in development) owned software and creative work.
 
 ## Mission
 
@@ -12,18 +15,8 @@ Deep intellectual and artistic contribution. Integrity in the work and in how it
 
 ## Background
 
-Master's at Harvard, cross-registered at MIT. First-author publications and patents in mathematics and data science. Co-PI on NASA atmospheric-science work, including parallel radiative-transfer codes on heterogeneous GPU clusters integrated with GEOS-5. Built an IR scene simulator for situational awareness. Geospatial work on wildfire modeling, landcover-change detection, and building-footprint ML. Founded and sold a geospatial analytics company whose pipeline made spatial operations queryable as non-spatial aggregations over uniform-information blocks. Built a 3D engine on the side. Have been coding since childhood.
+Master's at Harvard, cross-registered at MIT. First-author publications and patents in mathematics and applied data science. Co-PI on a NASA scientific-computing project involving parallel codes on heterogeneous GPU clusters. Founded and sold a previous startup. Years of engineering and research work across applied ML, simulation, real-time systems, and graph algorithms. Built a 3D engine on the side. Have been coding since childhood.
 
-## What I'm working on now
+## What "Lixel" means
 
-**Consulting.** I take on hard core technical problems in real-time AI, computer vision, and geospatial, typically where the existing approach has hit a wall. Currently available for a small number of new engagements when there's a good fit. See [Consulting](/consulting/).
-
-**A planetary-scale game (working title: *The Dimming*).** A procedurally generated planetoid covered by a dark shroud, with real-time GPU simulation across the whole world (thermal and hydraulic erosion, rivers, material blending, vegetation placement, water flow, pathfinding) and tens of thousands of intelligent agents whose behavior emerges from a partial-order ability system under shroud exposure. Two and a half months in.
-
-**Real-time generative AI for games and simulation.** A "baked AI" approach: large LLMs at bake time derive a complete state space and composite strategies; at runtime, RL plus very small LLMs running in compute shaders, spread across frames, navigate the state graph and execute strategies. Early.
-
-**Research on Hadwiger's conjecture.** Active. Details after publication.
-
----
-
-*Lixel: light + pixel.* Emergence from fundamental building blocks. Clarity, agency, and intelligence built up from the smallest pieces.
+Light + pixel. The idea that clarity, agency, and meaningful structure can emerge from simple, well-understood fundamental pieces, whether that's pixels building an image, agents building a society, or the small combinatorial blocks behind a proof.

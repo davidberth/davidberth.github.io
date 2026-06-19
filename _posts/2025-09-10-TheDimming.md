@@ -2,7 +2,7 @@
 title: A planetary simulation system
 date: 2025-09-10 
 categories: [Simulations, GPU, Topology]
-tags: [simulation, inflated, cube, geospatial]     # TAG names should always be lowercase
+tags: [simulation, inflated, cube, procedural]     # TAG names should always be lowercase
 ---
 
 The Dimming is the working name for a solo indie game I've been developing for ~3 months. It explores themes of light, darkness, agency, and intelligence. This game will make use of a real-time generative AI framework I'm developing; more on that in future posts. It's been a lot of fun to work on!

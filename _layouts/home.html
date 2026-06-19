@@ -4,122 +4,90 @@ refactor: true
 ---
 
 {% include lang.html %}
-<div>
-{% capture summary %}{% include summary.md %}{% endcapture %}
-{{ summary | markdownify }}
-</div>
-{% assign all_pinned = site.posts | where: 'pin', 'true' %}
-{% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
-{% assign posts = '' | split: '' %}
+<style>
+  .lixel-hero { padding: 1.5rem 0 1rem; }
+  .lixel-hero h1 { font-weight: 300; letter-spacing: 0.02em; margin-bottom: 0.25rem; }
+  .lixel-hero .lixel-tagline { font-style: italic; opacity: 0.85; margin-bottom: 1.25rem; }
+  .lixel-hero .lixel-mission { max-width: 46rem; }
+  .umbrella-card { display: block; height: 100%; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  .umbrella-card:hover { transform: translateY(-2px); }
+  .umbrella-card .card-body { padding: 1.25rem 1.25rem 1.1rem; }
+  .umbrella-card h2 { margin-bottom: 0.45rem; }
+  .umbrella-card p { margin-bottom: 0; opacity: 0.85; }
+  .umbrella-card.teaser .card-body { padding: 0.85rem 1.1rem; }
+  .umbrella-card.teaser h3 { margin-bottom: 0.25rem; }
+  .umbrella-card.teaser p { font-size: 0.9rem; opacity: 0.7; }
+  .umbrella-card.teaser .badge-soft {
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.05em;
+    text-transform: uppercase; opacity: 0.6; margin-left: 0.5rem;
+  }
+  .recent-writing h2 { font-weight: 400; }
+  .recent-writing ul { padding-left: 0; list-style: none; }
+  .recent-writing li { margin-bottom: 0.35rem; }
+  .recent-writing .post-date { font-size: 0.85rem; opacity: 0.6; margin-left: 0.5rem; }
+</style>
 
-<!-- Get pinned posts on current page -->
+<section class="lixel-hero">
+  <h1 class="display-5">Lixel</h1>
+  <p class="lixel-tagline lead">Light + pixel. Emergence from fundamental building blocks.</p>
+  <div class="lixel-mission">
+    <p>Deep intellectual and artistic contribution. Integrity in the work and in how it's done. Authentic thinking over fashion. Time and attention reserved for what's meaningful: for the work itself and for the people I love.</p>
+  </div>
+</section>
 
-{% assign visible_start = paginator.page | minus: 1 | times: paginator.per_page %}
-{% assign visible_end = visible_start | plus: paginator.per_page %}
-
-{% if all_pinned.size > visible_start %}
-  {% if all_pinned.size > visible_end %}
-    {% assign pinned_size = paginator.per_page %}
-  {% else %}
-    {% assign pinned_size = all_pinned.size | minus: visible_start %}
-  {% endif %}
-
-  {% for i in (visible_start..all_pinned.size) limit: pinned_size %}
-    {% assign posts = posts | push: all_pinned[i] %}
-  {% endfor %}
-{% else %}
-  {% assign pinned_size = 0 %}
-{% endif %}
-
-<!-- Get normal posts on current page -->
-
-{% assign normal_size = paginator.posts | size | minus: pinned_size %}
-
-{% if normal_size > 0 %}
-  {% if pinned_size > 0 %}
-    {% assign normal_start = 0 %}
-  {% else %}
-    {% assign normal_start = visible_start | minus: all_pinned.size %}
-  {% endif %}
-
-  {% assign normal_end = normal_start | plus: normal_size | minus: 1 %}
-
-  {% for i in (normal_start..normal_end) %}
-    {% assign posts = posts | push: all_normal[i] %}
-  {% endfor %}
-{% endif %}
-
-<div id="post-list" class="flex-grow-1 px-xl-1">
-  {% for post in posts %}
-    <article class="card-wrapper card">
-      <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
-        {% assign card_body_col = '12' %}
-
-        {% if post.image %}
-          {% assign src = post.image.path | default: post.image %}
-          {% unless src contains '//' %}
-            {% assign src = post.media_subpath | append: '/' | append: src | replace: '//', '/' %}
-          {% endunless %}
-
-          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-
-          {% assign lqip = null %}
-
-          {% if post.image.lqip %}
-            {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
-          {% endif %}
-
-          <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
-          </div>
-
-          {% assign card_body_col = '7' %}
-        {% endif %}
-
-        <div class="col-md-{{ card_body_col }}">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>{% include post-description.html %}</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                {% include datetime.html date=post.date lang=lang %}
-
-                <!-- categories -->
-                {% if post.categories.size > 0 %}
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    {% for category in post.categories %}
-                      {{ category }}
-                      {%- unless forloop.last -%},{%- endunless -%}
-                    {% endfor %}
-                  </span>
-                {% endif %}
-              </div>
-
-              {% if post.pin %}
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-                </div>
-              {% endif %}
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
+<section class="umbrellas mt-4">
+  <div class="row g-3">
+    <div class="col-md-4">
+      <a href="{{ '/research/' | relative_url }}" class="card-wrapper card umbrella-card text-decoration-none">
+        <div class="card-body">
+          <h2 class="h4">Research</h2>
+          <p>Independent work in graph theory and computation. The Four Color Theorem, Hadwiger's conjecture, and partition and interface methods. The upstream end of what becomes Studio.</p>
         </div>
       </a>
-    </article>
-  {% endfor %}
-</div>
-<!-- #post-list -->
+    </div>
+    <div class="col-md-4">
+      <a href="{{ '/consulting/' | relative_url }}" class="card-wrapper card umbrella-card text-decoration-none">
+        <div class="card-body">
+          <h2 class="h4">Consulting</h2>
+          <p>Hard technical problems in applied AI, scientific computing, and research engineering. From prototype to production, or paper to validated implementation.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="{{ '/learning/' | relative_url }}" class="card-wrapper card umbrella-card text-decoration-none">
+        <div class="card-body">
+          <h2 class="h4">Learning</h2>
+          <p>Advanced math and ML tutoring and mentoring. Contest and college level, with strong support for gifted and 2e learners.</p>
+        </div>
+      </a>
+    </div>
+  </div>
 
-{% if paginator.total_pages > 1 %}
-  {% include post-paginator.html %}
+  <div class="row g-3 mt-1">
+    <div class="col-md-6 col-lg-5">
+      <a href="{{ '/studio/' | relative_url }}" class="card-wrapper card umbrella-card teaser text-decoration-none">
+        <div class="card-body">
+          <h3 class="h6">Studio <span class="badge-soft">In development</span></h3>
+          <p>Owned software and creative work, built on Lixel's research. First project: <em>The Dimming</em>.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% assign recent = site.posts | where_exp: 'item', 'item.hidden != true' %}
+{% if recent.size > 0 %}
+<section class="recent-writing mt-5">
+  <h2 class="h4">Recent writing</h2>
+  <ul class="mt-3">
+    {% for post in recent limit: 3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="post-date">{% include datetime.html date=post.date lang=lang %}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="mt-2 mb-0"><a href="{{ '/writing/' | relative_url }}">All writing &rarr;</a></p>
+</section>
 {% endif %}
