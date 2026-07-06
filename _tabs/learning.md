@@ -12,7 +12,7 @@ I work one-on-one and in small groups with students who want to go deep in mathe
 
 - **Contest mathematics.** AMC, AIME, Putnam, and related olympiad preparation, including the problem-solving habits that transfer well to research and graduate work.
 - **College-level math and ML.** Linear algebra, real analysis, probability, optimization, statistical learning, deep learning, and the bridges between them.
-- **Advanced, gifted, and 2e learners.** Students who are working well ahead of their grade level, or who learn unevenly across subjects, and want a mentor who can meet them where they actually are.
+- **People who think and learn differently.** Students who are working well ahead of their grade level, or who learn unevenly across subjects, and want a mentor who can meet them where they actually are.
 
 ## How sessions work
 

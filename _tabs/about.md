@@ -11,7 +11,7 @@ Lixel is a small, focused practice built around four lanes: independent mathemat
 
 ## Mission
 
-Deep intellectual and artistic contribution. Integrity in the work and in how it's done. Authentic thinking over fashion. Time and attention reserved for what's meaningful: for the work itself and for the people I love.
+Lixel strives to make a significant, positive contribution to the world, and to help people who think and learn differently thrive and make contributions of their own.
 
 ## Background
 
