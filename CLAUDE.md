@@ -68,16 +68,28 @@ for credibility and a fast path to contact. Positioning detail, the audience
 model, and what is off-limits live in `lixelbrand/BRAND.md` — private, and it
 stays private.
 
-## Site structure (v1)
+## Site structure
 
-Top-nav, replacing the chirpy defaults:
+Live nav, from `_tabs/` — the site has moved well past the original
+About/Consulting/Writing/Contact sketch:
 
-- **About** — bio, mission, current threads mentioned briefly.
-- **Consulting** — the wedge, problem examples, contact. Most urgent.
-- **Writing** — chronological posts (Hadwiger's and Dimming posts live here).
-- **Contact** — or folded into Consulting.
+- **Research** — graph theory and computation; Four Color Theorem, Hadwiger's,
+  partition and interface methods. Framed as upstream of Studio.
+- **Consulting** — hard technical problems in applied AI, scientific computing,
+  research engineering.
+- **Learning** — advanced math and ML tutoring and mentoring, with explicit
+  support for people who think and learn differently.
+- **Studio** — owned software and creative work; The Dimming. Marked
+  "in development".
+- **Writing**, **Contact**, **About**.
+- Chirpy's **Categories** / **Tags** remain, demoted to the end.
 
-Demote chirpy's Categories / Tags / Archives to secondary.
+The home page is a custom `index.html`: hero, a Mission block, umbrella cards
+for Research / Consulting / Learning, a Studio teaser, and recent writing.
+
+Note that this framing is broader than the consulting-only wedge in
+`lixelbrand/BRAND.md` — Learning in particular has no counterpart there. The
+two should be reconciled; the site is the newer of the two.
 
 Writing about a project should link outward to that project, not restate it.
 Detail on The Dimming, the platform, or Hadwiger's belongs in those repos;
@@ -94,10 +106,19 @@ posts here are the public face of that work, subject to the posture in
 
 ## Open work
 
-- The site copy still reflects an earlier framing; About and Consulting need a
-  pass against the current positioning.
-- `_includes/favicons.html` references a `browserconfig.xml` that does not
-  exist, and there is no webmanifest despite 192/512 icons being available.
-- Palette reconciliation is pending in `lixelbrand` — the mark's gold and the
-  document identity's blue are currently two unrelated palettes. Site styling
-  should wait on that rather than pick a side.
+- **`_includes/logo.svg` is outside the brand pipeline.** It is the sidebar
+  lockup — the five-block mark plus an "ixel" wordmark in Bodoni MT — still
+  hand-authored in Inkscape, with the same off-grid coordinates and mismatched
+  stroke widths the favicon had before it was ported. It should become a
+  generated lockup in `lixelbrand` so the mark has one definition. Until then,
+  editing the mark in `lixelbrand` does **not** change what visitors see in the
+  sidebar.
+- **A fourth gold.** That lockup uses `#d4a574`, and `_sass/themes/_dark.scss`
+  sets `--link-color: #d4a574` to match it. So the site's visible accent is a
+  different gold from the favicon's `#ffce1d`, which is a different gold again
+  from the LaTeX documents' blue identity. Reconciling the palette in
+  `lixelbrand/src/tokens.json` has to account for this one, because it is the
+  gold users actually see.
+- No webmanifest, despite 192/512 icons being synced and available.
+- Positioning drift: `BRAND.md`'s wedge predates the current five-umbrella
+  site framing and omits Learning entirely.
