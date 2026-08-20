@@ -12,14 +12,14 @@ it does not keep it off the *internet*. Nothing confidential goes here: no
 client names, no engagement terms, no unpublished research detail.
 
 This repo is the *website only*. Identity, positioning, and company facts are
-authored in `C:\db\lixelbrand` and copied in — see below.
+authored in `C:\db\lixel\brand` and copied in — see below.
 
 ## Sibling repos
 
 | repo | what | relationship |
 | --- | --- | --- |
-| `C:\db\lixelbrand` | identity + company facts (private) | this repo consumes its `dist/` |
-| `C:\db\engagements` | client documents (private) | read for context, never copy text across |
+| `C:\db\lixel\brand` | identity + company facts (private) | this repo consumes its `dist/` |
+| `C:\db\lixel\engagements` | client documents (private) | read for context, never copy text across |
 | `C:\db\geo` | the platform (private) | source material for capability copy |
 | `C:\db\dimming`, `C:\db\hadwigers` | project work | source material for posts |
 
@@ -29,21 +29,21 @@ anything naming a client needs that client's consent.
 
 ## Brand assets are synced, not authored
 
-Everything visual comes from `lixelbrand` and is **generated there**:
+Everything visual comes from `brand` and is **generated there**:
 
 ```powershell
-.\tools\sync-brand.ps1              # defaults to ..\lixelbrand
-.\tools\sync-brand.ps1 -BrandPath D:\somewhere\lixelbrand
+.\tools\sync-brand.ps1              # defaults to ..\brand
+.\tools\sync-brand.ps1 -BrandPath D:\somewhere\brand
 ```
 
 Synced files carry a `GENERATED - DO NOT EDIT` header naming their source.
 **Do not hand-edit them and do not hand-tune a favicon here.** Fix the model in
-`lixelbrand/src/`, rebuild there, re-sync here. Raster sizes are laid out
-natively per size in `lixelbrand` (a 16px icon is not a downscaled logo), which
+`brand/src/`, rebuild there, re-sync here. Raster sizes are laid out
+natively per size in `brand` (a 16px icon is not a downscaled logo), which
 is exactly why this repo does not generate them.
 
 Synced files are **committed**, so GitHub Actions builds the site with no
-sibling repo present and no image toolchain. A missing `lixelbrand` breaks
+sibling repo present and no image toolchain. A missing `brand` breaks
 re-syncing only, never deploying.
 
 Landing spots: `assets/img/favicons/` (icons), `assets/img/` (logo SVG),
@@ -53,7 +53,7 @@ webmanifest — stays here; that is a web concern, not a brand one.
 
 ## Voice
 
-Summarized from `lixelbrand/BRAND.md`, which is authoritative. Duplicated here
+Summarized from `brand/BRAND.md`, which is authoritative. Duplicated here
 because site copy needs it constantly.
 
 > **Lixel — light + pixel. Emergence from fundamental building blocks.**
@@ -65,7 +65,7 @@ visually — an L of five pixel blocks, one of them lit.
 
 The primary audience is a company stuck on a hard technical problem, looking
 for credibility and a fast path to contact. Positioning detail, the audience
-model, and what is off-limits live in `lixelbrand/BRAND.md` — private, and it
+model, and what is off-limits live in `brand/BRAND.md` — private, and it
 stays private.
 
 ## Site structure
@@ -88,7 +88,7 @@ The home page is a custom `index.html`: hero, a Mission block, umbrella cards
 for Research / Consulting / Learning, a Studio teaser, and recent writing.
 
 Note that this framing is broader than the consulting-only wedge in
-`lixelbrand/BRAND.md` — Learning in particular has no counterpart there. The
+`brand/BRAND.md` — Learning in particular has no counterpart there. The
 two should be reconciled; the site is the newer of the two.
 
 Writing about a project should link outward to that project, not restate it.
@@ -110,14 +110,14 @@ posts here are the public face of that work, subject to the posture in
   lockup — the five-block mark plus an "ixel" wordmark in Bodoni MT — still
   hand-authored in Inkscape, with the same off-grid coordinates and mismatched
   stroke widths the favicon had before it was ported. It should become a
-  generated lockup in `lixelbrand` so the mark has one definition. Until then,
-  editing the mark in `lixelbrand` does **not** change what visitors see in the
+  generated lockup in `brand` so the mark has one definition. Until then,
+  editing the mark in `brand` does **not** change what visitors see in the
   sidebar.
 - **A fourth gold.** That lockup uses `#d4a574`, and `_sass/themes/_dark.scss`
   sets `--link-color: #d4a574` to match it. So the site's visible accent is a
   different gold from the favicon's `#ffce1d`, which is a different gold again
   from the LaTeX documents' blue identity. Reconciling the palette in
-  `lixelbrand/src/tokens.json` has to account for this one, because it is the
+  `brand/src/tokens.json` has to account for this one, because it is the
   gold users actually see.
 - No webmanifest, despite 192/512 icons being synced and available.
 - Positioning drift: `BRAND.md`'s wedge predates the current five-umbrella

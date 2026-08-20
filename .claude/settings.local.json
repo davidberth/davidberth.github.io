@@ -1,5 +1,23 @@
 {
   "permissions": {
+    "allow": [
+      "Read(//c/db//**)",
+      "Read(//c/db/engagements/**)",
+      "Bash(gh repo *)",
+      "Bash(/c/python/python tools/build.py)",
+      "Bash(cp dist/MANIFEST.json /tmp/m1.json)",
+      "Bash(/c/python/python -c ' *)",
+      "Bash(git add *)",
+      "Bash(git -c 'user.name=David Berthiaume' -c user.email=david@lixel.io commit -q -m 'Add generative build: one model, four renderers *)",
+      "Bash(git push *)",
+      "Bash(git config *)",
+      "Bash(echo \"autocrlf: $\\(git config core.autocrlf\\)\")",
+      "Bash(/c/python/python *)",
+      "Bash(git -c 'user.name=David Berthiaume' -c user.email=david@lixel.io commit -q -m 'Scope this repo to the website; consume brand from lixelbrand *)",
+      "Bash(git check-ignore *)",
+      "Bash(git rm *)",
+      "Bash(gh run *)"
+    ],
     "defaultMode": "acceptEdits"
   }
 }

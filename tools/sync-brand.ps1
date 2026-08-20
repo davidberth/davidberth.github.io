@@ -1,22 +1,22 @@
 <#
 .SYNOPSIS
-    Pull generated brand artifacts from the lixelbrand repo into this site.
+    Pull generated brand artifacts from the brand repo into this site.
 
 .DESCRIPTION
-    lixelbrand authors the identity; this repo consumes it. Nothing here is
+    brand authors the identity; this repo consumes it. Nothing here is
     hand-drawn and nothing here is authoritative -- to change how the mark
-    looks, edit lixelbrand/src/ and rebuild there, then re-run this.
+    looks, edit brand/src/ and rebuild there, then re-run this.
 
     Copies are committed to this repo, so GitHub Actions builds the site with
-    no sibling repo present and no image toolchain. A missing lixelbrand
+    no sibling repo present and no image toolchain. A missing brand
     breaks re-syncing only, never deploying.
 
-    Every file is verified against lixelbrand's MANIFEST.json before it is
+    Every file is verified against brand's MANIFEST.json before it is
     copied, so a half-built or hand-edited dist/ is caught here rather than
     shipped to lixel.io.
 
 .PARAMETER BrandPath
-    Path to the lixelbrand repo. Defaults to ..\lixelbrand -- the repos are
+    Path to the brand repo. Defaults to ..\brand -- the repos are
     siblings by convention, not by requirement.
 
 .PARAMETER WhatIf
@@ -24,22 +24,22 @@
 
 .EXAMPLE
     .\tools\sync-brand.ps1
-    .\tools\sync-brand.ps1 -BrandPath D:\src\lixelbrand -WhatIf
+    .\tools\sync-brand.ps1 -BrandPath D:\src\brand -WhatIf
 #>
 [CmdletBinding(SupportsShouldProcess)]
 param(
-    [string]$BrandPath = (Join-Path $PSScriptRoot '..\..\lixelbrand')
+    [string]$BrandPath = (Join-Path $PSScriptRoot '..\..\brand')
 )
 
 $ErrorActionPreference = 'Stop'
 
 $repo  = Resolve-Path (Join-Path $PSScriptRoot '..')
 $brand = try { Resolve-Path $BrandPath -ErrorAction Stop } catch {
-    throw "lixelbrand not found at '$BrandPath'. Clone it beside this repo, or pass -BrandPath. (Syncing needs it; building the site does not.)"
+    throw "brand not found at '$BrandPath'. Clone it beside this repo, or pass -BrandPath. (Syncing needs it; building the site does not.)"
 }
 $dist = Join-Path $brand 'dist'
 if (-not (Test-Path $dist)) {
-    throw "No dist/ in '$brand'. Run: python tools/build.py  (in lixelbrand)"
+    throw "No dist/ in '$brand'. Run: python tools/build.py  (in brand)"
 }
 
 # --- verify dist/ against its own manifest -------------------------------
@@ -56,13 +56,13 @@ foreach ($entry in $entries) {
     if ($actual -ne $entry.Value) { $bad += "$($entry.Name) (hash mismatch)" }
 }
 if ($bad.Count) {
-    throw ("lixelbrand dist/ does not match its MANIFEST:`n  " + ($bad -join "`n  ") +
-           "`nRun: python tools/build.py  (in lixelbrand)")
+    throw ("brand dist/ does not match its MANIFEST:`n  " + ($bad -join "`n  ") +
+           "`nRun: python tools/build.py  (in brand)")
 }
 Write-Host "verified $($entries.Count) files against MANIFEST (mark v$($manifest.mark_version), tokens v$($manifest.tokens_version))"
 
 # --- what lands where ----------------------------------------------------
-# Source names are lixelbrand's; destination names are what this site's
+# Source names are brand's; destination names are what this site's
 # markup expects. The mapping lives here because favicon naming is a
 # web-platform concern, not a brand one.
 $favicons = Join-Path $repo 'assets\img\favicons'
@@ -93,7 +93,7 @@ foreach ($m in $map) {
     if ($same) { continue }
 
     $rel = $m.To.Substring($repo.Path.Length + 1)
-    if ($PSCmdlet.ShouldProcess($rel, 'update from lixelbrand')) {
+    if ($PSCmdlet.ShouldProcess($rel, 'update from brand')) {
         Copy-Item $src $m.To -Force
     }
     Write-Host "  updated $rel"
