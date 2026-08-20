@@ -19,12 +19,12 @@ authored in `C:\db\lixel\brand` and copied in — see below.
 | repo | what | relationship |
 | --- | --- | --- |
 | `C:\db\lixel\brand` | identity + company facts (private) | this repo consumes its `dist/` |
-| `C:\db\lixel\engagements` | client documents (private) | read for context, never copy text across |
+| `C:\db\lixel\operations` | the business record (private) | read for context, never copy text across |
 | `C:\db\geo` | the platform (private) | source material for capability copy |
 | `C:\db\dimming`, `C:\db\hadwigers` | project work | source material for posts |
 
 Reading a sibling for context while drafting is expected. **Moving text across
-is not** — anything sourced from `engagements` needs a deliberate scrub, and
+is not** — anything sourced from `operations` needs a deliberate scrub, and
 anything naming a client needs that client's consent.
 
 ## Brand assets are synced, not authored

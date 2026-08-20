@@ -208,6 +208,8 @@ exclude:
   - docs
   - tools
   - README.md
+  - CLAUDE.md
+  - .claude
   - LICENSE
   - purgecss.js
   - "*.config.js"

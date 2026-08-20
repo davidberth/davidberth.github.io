@@ -22,6 +22,10 @@ package-lock.json
 !.vscode/extensions.json
 !.vscode/tasks.json
 
+# Local tool config. Never track this in a PUBLIC repo -- it records local
+# filesystem paths and the names of private sibling repos.
+.claude/settings.local.json
+
 # Misc
 _sass/vendors
 assets/js/dist
