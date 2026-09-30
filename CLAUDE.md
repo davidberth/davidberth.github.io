@@ -116,15 +116,19 @@ posts here are the public face of that work, subject to the posture in
   rects now use 40 x 40 blocks with one 6-unit gap, scaled to the lockup's
   existing mark height, with one stroke width, and the wordmark path is
   translated left by 13.1 so the foot-to-"ixel" gap is unchanged and the
-  lockup stays centered at the same 160px. Colors were left as they were
-  (see the next item), so the sidebar still differs from the mark in its gold
-  and its foot (`#2b2b2b` here, `#6e6e6e` in `brand`).
-- **A fourth gold.** That lockup uses `#d4a574`, and `_sass/themes/_dark.scss`
-  sets `--link-color: #d4a574` to match it. So the site's visible accent is a
-  different gold from the favicon's `#ffce1d`, which is a different gold again
-  from the LaTeX documents' blue identity. Reconciling the palette in
-  `brand/src/tokens.json` has to account for this one, because it is the
-  gold users actually see.
+  lockup stays centered at the same 160px. **Recolored by hand the same day**
+  to match `brand`: the lit pixel is `#ffce1d` and the foot `#6e6e6e` (it was
+  `#2b2b2b`, nearly invisible on the dark sidebar). In the dark theme a rule in
+  `_sass/themes/_dark.scss` strokes the five blocks near-white at 0.95px, the
+  same treatment as the slides' dark mark, because the lockup's inline black
+  strokes vanish on the dark sidebar. What remains is the pipeline itself: the
+  next change to the mark in `brand` will need this file edited by hand again
+  until the lockup is generated there.
+- **One gold, reconciled 2026-09-30 (David).** The site's accent was the bronze
+  `#d4a574`, in the lockup and as the dark theme's `--link-color`, a different
+  gold from the mark's `#ffce1d`. It is now `#ffce1d` in both places, and
+  `brand/src/tokens.json` records it as `site.accent`. The LaTeX documents'
+  blue is a separate question and still open.
 - No webmanifest, despite 192/512 icons being synced and available.
 - Positioning drift: `BRAND.md`'s wedge predates the current five-umbrella
   site framing and omits Learning entirely.

@@ -14,7 +14,7 @@
   --label-color: #a7a7a7;
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
-  --link-color: #d4a574;
+  --link-color: #ffce1d;
   --link-underline-color: #6e5232;
   --button-bg: #1e1e1e;
   --btn-border-color: #2e2f31;
@@ -48,6 +48,14 @@
   width: 160px;          /* adjust to taste */
   height: auto;
   margin: 0.25rem auto 0;
+  }
+  /* The mark's dark-mode outline, the same as the slides': near-white and
+     thinner than light mode's black, which vanishes on the dark sidebar.
+     brand option E, 2026-09-30. The lockup's inline strokes are black, so
+     this overrides them for the five blocks only; the wordmark is untouched. */
+  #sidebar .profile-wrapper .site-logo-link svg rect {
+  stroke: #f0f0f0 !important;
+  stroke-width: 0.95px !important;
   }
  #sidebar .profile-wrapper .site-subtitle { margin-top: 0.25rem; }
 
