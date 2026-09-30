@@ -112,7 +112,13 @@ posts here are the public face of that work, subject to the posture in
   stroke widths the favicon had before it was ported. It should become a
   generated lockup in `brand` so the mark has one definition. Until then,
   editing the mark in `brand` does **not** change what visitors see in the
-  sidebar.
+  sidebar. **Hand-matched to brand's square geometry on 2026-09-30**: the five
+  rects now use 40 x 40 blocks with one 6-unit gap, scaled to the lockup's
+  existing mark height, with one stroke width, and the wordmark path is
+  translated left by 13.1 so the foot-to-"ixel" gap is unchanged and the
+  lockup stays centered at the same 160px. Colors were left as they were
+  (see the next item), so the sidebar still differs from the mark in its gold
+  and its foot (`#2b2b2b` here, `#6e6e6e` in `brand`).
 - **A fourth gold.** That lockup uses `#d4a574`, and `_sass/themes/_dark.scss`
   sets `--link-color: #d4a574` to match it. So the site's visible accent is a
   different gold from the favicon's `#ffce1d`, which is a different gold again
