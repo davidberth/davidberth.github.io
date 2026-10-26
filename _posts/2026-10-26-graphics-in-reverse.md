@@ -1,5 +1,5 @@
 ---
-title: Wrapping up a computer vision project
+title: Graphics in reverse
 date: 2026-10-26 12:00:00 -0400
 categories: [Consulting]
 tags: [computer vision, computer graphics, teaching]
