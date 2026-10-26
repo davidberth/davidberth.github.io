@@ -17,9 +17,9 @@ Not a vertical specialist, not a strategist, not someone you bring in to convinc
 - **Research engineering.** Taking a paper, prototype, or internal research effort and producing a validated, well-engineered implementation.
 - **Algorithm design.** Graph-theoretic, combinatorial, and partition-based algorithms, with computational backing where it matters.
 
-## How engagements tend to look
+## How I work
 
-Short, focused, technically deep. Often a few weeks of investigation and prototyping that produce a working approach your team can run with, not a deck.
+I enable a team, not just implement solutions. Alongside the code, I teach the methods underneath it, so your team understands the system well enough to run it, question it, and keep building on it. The result is a working approach your team owns, not a deck.
 
 ## Availability
 
