@@ -15,7 +15,7 @@ Lixel strives to make a significant, positive contribution to the world, and to 
 
 ## Background
 
-Master's at Harvard, cross-registered at MIT. First-author publications and patents in mathematics and applied data science. Co-PI on a NASA scientific-computing project involving parallel codes on heterogeneous GPU clusters. Founded and sold a previous startup. Years of engineering and research work across applied ML, simulation, real-time systems, and graph algorithms. Built a 3D engine on the side. Have been coding since childhood.
+I studied at Harvard, with cross-registration at MIT, and have published and patented work in mathematics and applied data science. I was Co-PI on a NASA scientific-computing project running parallel codes on heterogeneous GPU clusters, and I founded and sold a startup. Most of my work since has been engineering and research across applied ML, simulation, real-time systems, and graph algorithms. I've always enjoyed computer graphics and challenging problems. I also started writing games and graphics engines as a kid and never really stopped.
 
 ## What "Lixel" means
 
