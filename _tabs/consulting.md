@@ -8,12 +8,6 @@ title: Consulting
 
 I enable a team, not just implement solutions. Alongside the code, I teach the methods underneath it, so your team understands the system well enough to run it, question it, and keep building on it. The result is a working approach your team owns, not a deck.
 
-## What I do
-
-I take on hard core technical problems in applied AI, scientific computing, and research engineering, typically where the existing approach has hit a wall and the path forward isn't obvious.
-
-Not a vertical specialist, not a strategist, not someone you bring in to convince a stakeholder or run a team. The work is the problem itself: getting a difficult system from prototype to something that runs reliably in production, or turning a research idea into a clean implementation a team can build on.
-
 ## Where I'm strongest
 
 - **Applied AI.** Designing and shipping ML and generative systems for problems that don't fit off-the-shelf tooling, including real-time inference, reinforcement learning, and small LLMs running under tight latency and compute budgets.
