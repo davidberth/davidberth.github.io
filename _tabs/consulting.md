@@ -6,7 +6,7 @@ title: Consulting
 
 ## How I work
 
-I enable a team, not just implement solutions. Alongside the code, I teach the methods underneath it, so your team understands the system well enough to run it, question it, and keep building on it. The result is a working approach your team owns, not a deck.
+I don't just implement solutions; I enable your team to carry them forward. Alongside the code, I teach the methods underneath it, so your team understands the system well enough to run it, question it, and keep building on it. The result is a working approach your team owns.
 
 ## Where I'm strongest
 
