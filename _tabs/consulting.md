@@ -4,6 +4,10 @@ order: 2
 title: Consulting
 ---
 
+## How I work
+
+I enable a team, not just implement solutions. Alongside the code, I teach the methods underneath it, so your team understands the system well enough to run it, question it, and keep building on it. The result is a working approach your team owns, not a deck.
+
 ## What I do
 
 I take on hard core technical problems in applied AI, scientific computing, and research engineering, typically where the existing approach has hit a wall and the path forward isn't obvious.
@@ -16,10 +20,6 @@ Not a vertical specialist, not a strategist, not someone you bring in to convinc
 - **Scientific computing.** Numerical methods, simulation, and large-scale compute on heterogeneous hardware (CPU and GPU).
 - **Research engineering.** Taking a paper, prototype, or internal research effort and producing a validated, well-engineered implementation.
 - **Algorithm design.** Graph-theoretic, combinatorial, and partition-based algorithms, with computational backing where it matters.
-
-## How I work
-
-I enable a team, not just implement solutions. Alongside the code, I teach the methods underneath it, so your team understands the system well enough to run it, question it, and keep building on it. The result is a working approach your team owns, not a deck.
 
 ## Availability
 
