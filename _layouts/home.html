@@ -78,6 +78,10 @@ refactor: true
     background: #010424; margin: 0.25rem 0 1.5rem;
   }
   .lixel-banner img { display: block; width: 100%; height: auto; }
+  /* Chirpy's refactor wraps every <img> on the home layout in .preview-img, a 40:21 box
+     with a gray background meant for post previews; the banner keeps its own shape. */
+  .lixel-banner .preview-img { aspect-ratio: auto; height: auto; background: none; border-radius: 0; }
+  .lixel-banner .preview-img img { height: auto; border-radius: 0; }
   .lixel-banner-text {
     position: absolute; left: 7.4%; top: 36%; transform: translateY(-50%); max-width: 40%;
   }
