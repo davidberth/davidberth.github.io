@@ -46,7 +46,7 @@ Synced files are **committed**, so GitHub Actions builds the site with no
 sibling repo present and no image toolchain. A missing `brand` breaks
 re-syncing only, never deploying.
 
-Landing spots: `assets/img/favicons/` (icons), `assets/img/` (logo SVG),
+Landing spots: `assets/img/favicons/` (icons), `assets/img/` (logo SVG, home hero),
 `_sass/_lixel-tokens.scss` (color variables). Web-platform wiring — the
 `<link>` tags in `_includes/favicons.html`, theme colors, any future
 webmanifest — stays here; that is a web concern, not a brand one.
@@ -84,8 +84,12 @@ About/Consulting/Writing/Contact sketch:
 - **Writing**, **Contact**, **About**.
 - Chirpy's **Categories** / **Tags** remain, demoted to the end.
 
-The home page is a custom `index.html`: hero, a Mission block, umbrella cards
-for Research / Consulting / Learning, a Studio teaser, and recent writing.
+The home page is `_layouts/home.html` (`index.html` only names the layout): a
+hero banner, recent writing, the Mission block, umbrella cards for Research /
+Consulting / Learning, and a Studio teaser. The banner is the business card's
+front image, synced from `brand` as `assets/img/home-hero.webp` (2026-11-04),
+with the words set over its dark left side; its alt text describes the picture
+and nothing more.
 
 Note that this framing is broader than the consulting-only wedge in
 `brand/BRAND.md` — Learning in particular has no counterpart there. The

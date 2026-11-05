@@ -70,10 +70,39 @@ refactor: true
   .recent-writing ul { padding-left: 0; list-style: none; }
   .recent-writing li { margin-bottom: 0.35rem; }
   .recent-writing .post-date { font-size: 0.85rem; opacity: 0.6; margin-left: 0.5rem; }
+
+  /* The hero: the business card's front, synced from brand (src/web/hero.json). Navy in
+     both themes, with the words in the dark left side where the card has the lockup. */
+  .lixel-banner {
+    position: relative; overflow: hidden; border-radius: 0.6rem;
+    background: #010424; margin: 0.25rem 0 1.5rem;
+  }
+  .lixel-banner img { display: block; width: 100%; height: auto; }
+  .lixel-banner-text {
+    position: absolute; left: 7.4%; top: 50%; transform: translateY(-50%); max-width: 40%;
+  }
+  .lixel-hero .lixel-banner h1 {
+    color: #f0f0f0; font-weight: 300; letter-spacing: 0.02em;
+    margin: 0 0 0.4rem; font-size: clamp(2rem, 4vw, 3.1rem);
+  }
+  .lixel-banner p {
+    color: #afb0b1; margin: 0; line-height: 1.45; font-size: clamp(0.92rem, 1.25vw, 1.08rem);
+  }
+  .lixel-banner p span { display: block; color: #95969c; font-size: 0.9em; }
+  @media (max-width: 767px) {
+    .lixel-banner-text { position: static; transform: none; max-width: none; padding: 0.9rem 1.1rem 1.1rem; }
+  }
 </style>
 
 <section class="lixel-hero">
-  <h1 class="display-5">Lixel</h1>
+  <div class="lixel-banner">
+    <img src="{{ '/assets/img/home-hero.webp' | relative_url }}" width="1680" height="960" fetchpriority="high"
+         alt="A lamp lights a bay at night; away from the light, the dark breaks into pixels.">
+    <div class="lixel-banner-text">
+      <h1>Lixel</h1>
+      <p>AI systems and scientific computing<span>From research to production</span></p>
+    </div>
+  </div>
 
   {% assign recent = site.posts | where_exp: 'item', 'item.hidden != true' %}
   {% if recent.size > 0 %}

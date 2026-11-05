@@ -78,6 +78,7 @@ $map = @(
     @{ From = 'logo\lixel-mark.svg'; To = "$favicons\favicon.svg" }
     @{ From = 'logo\lixel-mark.svg'; To = "$repo\assets\img\lixel-mark.svg" }
     @{ From = 'scss\_lixel-tokens.scss'; To = "$repo\_sass\_lixel-tokens.scss" }
+    @{ From = 'web\home-hero.webp'; To = "$repo\assets\img\home-hero.webp" }
 )
 
 $changed = 0
