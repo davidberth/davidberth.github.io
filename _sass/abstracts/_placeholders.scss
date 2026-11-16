@@ -28,6 +28,13 @@
       }
     }
   }
+
+  // A touch screen has no hover to reveal the link, so it would sit after every heading as a bare #.
+  @media (hover: none) {
+    .anchor {
+      display: none;
+    }
+  }
 }
 
 %tag-hover {
